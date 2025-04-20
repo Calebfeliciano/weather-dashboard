@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3001;
 console.log('🚀 process.env.PORT:', process.env.PORT);
 console.log('🛠 Effective PORT:', PORT);
 
-// Serves static files in the entire client's dist folder
+// Serves static files in the entire client's dist folder 
 app.use(express.static('../client/dist'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
