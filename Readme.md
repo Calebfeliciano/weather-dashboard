@@ -1,8 +1,10 @@
 # 🌦️ Weather API
 
+# 🌦️ Weather API
+
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
-A full-stack weather dashboard built with **TypeScript**, **Express**, **Vite**, and the **OpenWeatherMap API**. Users can search for any city and view current weather conditions and a 5-day forecast. All searched cities are stored in history and can be revisited or deleted.
+A sleek and responsive full-stack weather dashboard built with **TypeScript**, **Express**, **Vite**, and the **OpenWeatherMap API**. Users can search for any city to instantly view its current weather conditions and a 5-day forecast. Searched cities are saved in a history panel and can be revisited or deleted.
 
 ---
 
@@ -13,6 +15,7 @@ A full-stack weather dashboard built with **TypeScript**, **Express**, **Vite**,
 - [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
+- [Screenshots](#-screenshots)
 - [Questions](#questions)
 
 ---
@@ -38,24 +41,21 @@ A full-stack weather dashboard built with **TypeScript**, **Express**, **Vite**,
    npm run start:dev
    ```
 
-> This will start the server on port `3001` and the client (Vite) on `http://localhost:3000`
+> This starts the backend server on port `3001` and the frontend (Vite) on `http://localhost:3000`.
 
 ---
 
 ## 🔧 Usage
 
-Once the app is running locally or deployed:
-
 - Type a **city name** into the search bar and click **Search**
-- The **current weather** and a **5-day forecast** will display
-- Each city searched is saved to the **search history list**
-- Click a city in the list to reload weather instantly
-- Click the 🗑️ icon to delete a saved city from history
-- Invalid city searches will show a friendly alert
-- Uses OpenWeatherMap API and supports cities globally
+- View the **current weather** and **5-day forecast** for that city
+- Recently searched cities are saved in the **search history**
+- Click a history item to reload its weather
+- Click the 🗑️ icon next to a history item to remove it
+- Invalid cities show a friendly error alert
+- Weather data is retrieved from the OpenWeatherMap API
 
-👉 **Live App:** [https://weather-dashboard-a5uw.onrender.com]
-> _(Replace with your actual Render URL)_
+👉 **Live App:** [https://weather-dashboard-a5uw.onrender.com](https://weather-dashboard-a5uw.onrender.com)
 
 ---
 
@@ -67,34 +67,57 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ## 🤝 Contributing
 
-Contributions are welcome and encouraged! To contribute:
+Contributions are welcome! To get started:
 
 1. Fork the repository
-2. Create a new branch for your feature or fix:
+2. Create a new branch:
 
    ```bash
    git checkout -b your-feature-name
    ```
 
-3. Make your changes and commit them with clear messages
-4. Push to your fork and open a **Pull Request**
-5. Describe your changes clearly in the PR
+3. Commit your changes with clear messages
+4. Push your branch:
+
+   ```bash
+   git push origin your-feature-name
+   ```
+
+5. Open a **Pull Request** and describe your changes
 
 ---
 
 ## 🧪 Tests
 
-There are currently no automated tests. Manual testing includes:
+While no automated tests are implemented yet, you can manually test the app by:
 
-- Searching for cities
-- Error handling for invalid inputs
-- History persistence and deletion
+- Searching for real cities in the input bar
+- Attempting to search for invalid cities (error alerts)
+- Ensuring previously searched cities show up in history
+- Clicking or deleting history items
+
+---
+
+## 📸 Screenshots
+
+### 🔍 Search for a City
+![Search city](./Assets/Weather-Api-search-city.png)
+
+### 📊 Display Results
+![Display city](./Assets/Weather-Api-display-city.png)
+
+### ❌ Handle Invalid City
+![Search fake city](./Assets/Weather-APi-search-fake-city.png)
+![Display fake city](./Assets/Weather-Api-display-fake-city.png)
+
+### 🕘 Persistent History
+![List of Cities](./Assets/Screenshot%202025-04-20%20155407.png)
 
 ---
 
 ## ❓ Questions
 
-If you have any questions, feel free to reach out:
+If you have any questions or feedback, feel free to reach out:
 
 - GitHub: [Calebfeliciano](https://github.com/Calebfeliciano)
 - Email: [Caleb.feliciano11@gmail.com](mailto:Caleb.feliciano11@gmail.com)
