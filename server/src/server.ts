@@ -9,6 +9,10 @@ const app = express();
 
 const PORT = process.env.PORT || 3001;
 
+// ✅ ADD THESE TWO LINES FOR DEBUGGING
+console.log('🚀 process.env.PORT:', process.env.PORT);
+console.log('🛠 Effective PORT:', PORT);
+
 // Serves static files in the entire client's dist folder
 app.use(express.static('../client/dist'));
 app.use(express.urlencoded({ extended: true }));
@@ -17,3 +21,4 @@ app.use(routes);
 
 // Start the server on the port
 app.listen(PORT, () => console.log(`Listening on PORT: ${PORT}`));
+
